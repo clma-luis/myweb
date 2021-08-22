@@ -213,7 +213,7 @@ main {
     flex-direction: column;
     align-items: center;
     background-color: var(--black);
-    background-image: url('../assets/images/abstract-dark.jpg');
+    background-image: url('../assets/images/abstract-dark-min.jpg');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -451,7 +451,7 @@ width: 50%;
     flex-direction: column;
     align-items: center;
     background-color: var(--black);
-    background-image: url('../assets/images/portfolio.jpg');
+    background-image: url('../assets/images/portfolio-min.jpg');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
