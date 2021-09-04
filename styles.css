@@ -274,14 +274,14 @@ width: 50%;
 }
 
 .section-left{
-    width: 37%;
-    height: 95%;
+    width: 21%;
+    height: 100%;
     padding-bottom: 10px;
     margin: 10px;
-    background-size: cover;
+    background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
-    background-image: url(../assets/images/personal-photo.jpg);
+    background-image: url(../assets/images/personal-photo.png);
 }
 
 .about__icons i img{
@@ -340,7 +340,7 @@ width: 50%;
 }
 
 .cards__container {
-    padding-top: px;
+    margin-right: 15px;
     padding-bottom: 20px ;
     max-width: 600px;
 }
@@ -357,7 +357,7 @@ width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    width: 380px;
+    width: 430px;
     font-size: 1.3rem;
     background-color: #DEE3E9;
     padding: 10px;
@@ -435,9 +435,10 @@ width: 50%;
 
 
 .skill-image{
-    width: 40%;
+    width: 31%;
     height: 95%;
-    background-color: black;
+    background-size: cover;
+    background-image: url('./assets/images/3.jpg');
 }
 /*PORTFOLIO*/
 
