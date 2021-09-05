@@ -465,7 +465,7 @@ height: 260px;
 }
 
 .portfolio-details h4{
-font-size: 16px;
+font-size: 28px;
 transition: transform 0.3s, opacity 0.3s;
 transform: translate3d(0, -15px, 0);
 font-weight: 700;
@@ -475,7 +475,7 @@ color: #3333;
 .portfolio-details span{
 display: block;
 color: #666;
-font-size: 13px;
+font-size: 20px;
 transition: transform 0.3s, opacity 0.3s;
 transform: translate3d(0, 15px, 0);
 }

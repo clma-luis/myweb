@@ -515,7 +515,7 @@ width: 50%;
 }
 
 .portfolio-details h4{
-    font-size: 16px;
+    font-size: 28px;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
@@ -529,7 +529,7 @@ width: 50%;
 .portfolio-details span{
     display: block;
   color: #666666;
-  font-size: 13px;
+  font-size: 20px;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: transform 0.3s, opacity 0.3s;
   transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
