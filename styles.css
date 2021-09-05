@@ -231,7 +231,7 @@ main {
 
 .about__section-title h2 {
     font-size: 6rem;
-    padding-top: 9%;
+    padding-top: 15%;
     color: var(--title-blue);
 }
 
@@ -321,7 +321,7 @@ width: 50%;
 .skill__section-title h2 {
     font-size: 6rem;
     color: var(--title-blue);
-    padding-top: 14%;
+    padding-top: 17%;
 }
 
 .skill__section-title p {
@@ -469,7 +469,7 @@ width: 50%;
 .portfolio__section-title h2 {
     font-size: 6rem;
     color: var(--title-blue);
-    padding-top: 14%;
+    padding-top: 19%;
 }
 
 .portfolio__section-title p {
@@ -559,7 +559,7 @@ width: 50%;
     width: 100%;
     min-width: 320px;
     padding-bottom: 25px;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -573,9 +573,9 @@ width: 50%;
 }
 
 .contact__section h2{
-    font-size: 4rem;
+    font-size: 6rem;
     color: var(--title-blue);
-    padding-top: 100px;
+  
     
 }
 
@@ -591,7 +591,7 @@ width: 50%;
     border-radius: 5px;
 	box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
 	border: 1px solid rgba(255,255,255,0.01);
-    margin-top: 10px;
+    margin-top: 5%;
     margin-bottom: 35px;
 }
  
@@ -683,6 +683,13 @@ width: 50%;
 	transition: all ease 0.5s;
 }
 
+textarea{
+    resize: none;
+}
+
+.contact__section .info{
+    opacity: 0;
+}
 
 
 /*footer*/

@@ -41,8 +41,8 @@
                 <a href="#">Dowload CV</a>
             </div>
             <div class="cover__page-icons">
-                <i><img src="./assets/icons/linkdin.svg" alt=""></i>
-                <i><img src="./assets/icons/github.svg" alt=""></i>
+                <i><a href="https://www.linkedin.com/in/carlos-luis-mar%C3%ADn-644069152/" target="_blank"><img src="./assets/icons/linkdin.svg" alt=""></a></i>
+                <i><a href="https://github.com/clma-luis/clma-luis" target="_blank"><img src="./assets/icons/github.svg" alt=""></a></i>
             </div>
         </section>
 
@@ -188,7 +188,7 @@
                 </div>
 
                 <div class="portfolio-box">
-                    <a class="portfolio-item" href="" style="background-image: url('./assets/images/chat.jpg')">
+                    <a class="portfolio-item" href="https://github.com/clma-luis/chat-app" style="background-image: url('./assets/images/chat.jpg')">
                     <div class="portfolio-details">
                         <h4>Chat-App</h4>
                         <span>Portfolio 2</span>
@@ -220,19 +220,19 @@
         <!--contact-form------------------->
         <section class="contact__section" id="contact">
             <h2>Contact me</h2>
-            <form class="contact-form">
+            <form id="form" action="" class="contact-form">
                 <!--left--------------------------------------->
                 <div class="contact-left">
 
                     <!--name-------->
                     <div class="f-name">
                         <font>Name</font>
-                        <input type="text" placeholder="Full Name" />
+                        <input name="name" type="text" placeholder="Full Name" />
                     </div>
                     <!--email-------->
                     <div class="f-email">
                         <font>Email</font>
-                        <input type="email" placeholder="Example@gmail.com" />
+                        <input name="email" type="email" placeholder="Example@gmail.com" />
                     </div>
                 </div>
                 <!--right------------------------------------------->
@@ -245,16 +245,19 @@
                     <!--submit-btn------------>
 
                 </div>
-                <button class="button-submit">submit</button>
+                 <a class="info x2" href="mailto:marincarlosl19@gmail.com" id="info">info</a>
+                <button type="submit" class="button-submit">submit</button>
+
+               
             </form>
         </section>
     </main>
 
     <footer>
         <div class="red-social">
-            <a href=""><img src="./assets/icons/linkdin-footer.svg" alt=""></a>
-            <a href=""><img src="./assets/icons/github-footer.svg" alt=""></a>
-            <a href=""><img src="./assets/icons/gmail-footer.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/carlos-luis-mar%C3%ADn-644069152/"><img src="./assets/icons/linkdin-footer.svg" target="_blank" alt=""></a>
+            <a href="https://github.com/clma-luis/clma-luis"><img src="./assets/icons/github-footer.svg" alt=""></a>
+            <a href="mailto:marincarlosl19@gmail.com"><img src="./assets/icons/gmail-footer.svg" alt=""></a>
         </div>
     </footer>
 
@@ -262,6 +265,20 @@
 
     <script src="./js/main.js"></script>
     <script src="./js/index.js"></script>
+    <script>
+        const $form = document.querySelector('#form')
+        const $buttonMailto = document.querySelector('#info')
+
+        $form.addEventListener('submit',
+        
+        function handleSubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            $buttonMailto.setAttribute('href',  `mailto:marincarlosl19@gmail.com?subject=nombre ${form.get('name')} correo ${form.get('email')}&body=${form.get('message')}`)
+            $buttonMailto.click()
+        }
+        )
+    </script>
 </body>
 
 </html>
